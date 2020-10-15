@@ -36,7 +36,7 @@ function createTopic({ lat, lng }) {
 function createPayload({ lat, lng }) {
   return {
     Waybill_Num: faker.finance.account(),
-    ScanTime: `${new Date().toDateString()}`,
+    ScanTime: `${new Date().toLocaleTimeString()}`,
     LocationName: faker.address.streetAddress(),
     Location_Lat: lat,
     Location_Long: lng,
