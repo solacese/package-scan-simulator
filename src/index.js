@@ -9,7 +9,7 @@ import "regenerator-runtime";
 
 // app modules
 import { createMqttClient } from "./mqtt-client";
-import { createIncrementerService } from "./mock-scanner";
+import { createMockScannerService } from "./mock-scanner";
 
 async function run() {
   let mqttClientConfig = {
